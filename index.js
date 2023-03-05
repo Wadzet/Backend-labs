@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .catch(error => console.error('MongoDB connection error:', error));
 
 
+  
 app.use('./api/sessions', require('./api/sessions'));
 app.use('./api/theaters', require('./api/theaters'));
 app.use('./api/users', require('./api/users'));
